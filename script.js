@@ -30,12 +30,15 @@
     function makeThisSentence(){
         let index = randomizer(arrayLength);
         let woord1 = onderwerp[index];
-        let woord2 = werkwoord[index];
+        index = randomizer(arrayLength);
+        let woord2 = werkwoord[index];    
+        index = randomizer(arrayLength);
         let woord3 = restwoord[index];
         let outputString = woord1 + " " + woord2 + " " + woord3;
         return outputString;
     }
     
+
     function selectThisImage(){
         let index = randomizer(arrayLength);
         myImage.src = plaatjes[index]; 
@@ -52,9 +55,9 @@
     
     
     
-    const onderwerp = ["she", "Ed", "Rosmerta"];
-    const werkwoord = ["walks", "learns", "drinks"];
-    const restwoord = ["hard", "at school", "coffee"];
+    const onderwerp = ["he", "the teacher", "daan"];
+    const werkwoord = ["is", "eats", "likes"];
+    const restwoord = ["slow", "pizza", "games"];
         
-    let plaatjes = ["https://cdn.pixabay.com/photo/2018/07/09/17/44/baby-elephant-3526681__340.png", "https://www.how-to-draw-funny-cartoons.com/images/cartoon-baby-007.jpg", "https://thumbs.dreamstime.com/b/smiling-heart-cartoon-open-arms-nice-image-all-projects-love-representing-version-its-suggest-idea-40930153.jpg", "https://observer.com/wp-content/uploads/sites/2/2020/05/yoda-art-observer.jpg?quality=80"]
+    let plaatjes = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2OakcZqND_wANl7UYveWnbY1A6CK6flcTxw&usqp=CAU", "https://i.pinimg.com/originals/72/5a/67/725a67173b2d459ca69df323c4062afe.jpg", "https://variety.com/wp-content/uploads/2019/06/banjo-kazooie-in-smash.jpg?w=681&h=383&crop=1", "https://i1.sndcdn.com/artworks-000565730150-bsjfba-t500x500.jpg"]
     let arrayLength = onderwerp.length;
